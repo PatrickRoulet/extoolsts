@@ -70,11 +70,11 @@ public class Person {
 
 	@Override
 	public String toString() {
+		String toPrint = firstName +" "+ lastName + "(" + calculateAge() + " years old)";
 		if (company == null) {
-		   return firstName +" "+ lastName + "(" + calculateAge() + " years old) is not employed for the moment";
+		   return toPrint + "is not employed for the moment";
 		} else {
-		   return firstName +" "+ lastName + "(" + calculateAge() + " years old)"
-					+ " works for "+company.getName()+" in "+company.getAddress().getTown();			
+		   return toPrint + " works for "+company.getName()+" in "+company.getAddress().getTown();			
 		}
 	}
 	
