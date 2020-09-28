@@ -37,7 +37,7 @@ public class ExG4 {
 		System.out.println("Number of instructors created : "+instructors.size());
 		System.out.println("-----------------------------------------------------------");
 		for (Instructor instructor : instructors) {
-			System.out.println(instructor.toString());
+			System.out.println(instructor);
 		}
 		System.out.println("-----------------------------------------------------------");
 		
