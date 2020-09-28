@@ -27,7 +27,8 @@ public class ExF4 {
 		instructors.add(new Instructor("Patrick", "Roulet", 47));
 		instructors.add(new Instructor("Philippe", "Peeters", 52));
 		
-		instructors.get(1).printSalaryHistory(47, 22, 2500.0);
+		instructors.get(0).printSalaryHistory(58, 21, 2200.0);	
+		instructors.get(1).printSalaryHistory(47, 22, 2500.0,"salaryHisPR.txt");
 		
 		Course course1 = new Course("Java",3,200.0,false);
 		course1.addInstructor(instructors.get(0));

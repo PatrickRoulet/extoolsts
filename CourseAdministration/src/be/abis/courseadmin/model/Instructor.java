@@ -43,11 +43,15 @@ public class Instructor {
 	}
 
 	public void printSalaryHistory(int currentAge, int startingAge, double startingSalary) {
+		printSalaryHistory(currentAge, startingAge, startingSalary, "salaryhistory.txt");
+	}
+
+	public void printSalaryHistory(int currentAge, int startingAge, double startingSalary, String outputName) {
 		int workingAge = startingAge;
 		double workingSalary = startingSalary;
 		BufferedWriter bufferedWriter = null;
 		try {
-			Path pathToFile= Paths.get("salaryhistory.txt");
+			Path pathToFile= Paths.get(outputName);
 			bufferedWriter = Files.newBufferedWriter(pathToFile);
 			while (workingAge < (startingAge+36) && workingAge < (currentAge+1)) {
 				bufferedWriter.write("Salary of "+firstName+" at "+workingAge+" is "+workingSalary+"\n");
@@ -67,6 +71,7 @@ public class Instructor {
 		} catch (IOException except) {
 			except.printStackTrace();
 		}
+		
 	}
 
 }

@@ -1,6 +1,9 @@
-Salary of Patrick at 22 is 2500.0
-Salary of Patrick at 27 is 2575.0
-Salary of Patrick at 32 is 2652.25
-Salary of Patrick at 37 is 2731.8175
-Salary of Patrick at 42 is 2813.772025
-Salary of Patrick at 47 is 2898.18518575
+Salary of Bruno at 21 is 2200.0
+Salary of Bruno at 26 is 2266.0
+Salary of Bruno at 31 is 2333.98
+Salary of Bruno at 36 is 2403.9994
+Salary of Bruno at 41 is 2476.1193820000003
+Salary of Bruno at 46 is 2550.40296346
+Salary of Bruno at 51 is 2626.9150523638
+Salary of Bruno at 56 is 2705.722503934714
+Maximum salary reached
