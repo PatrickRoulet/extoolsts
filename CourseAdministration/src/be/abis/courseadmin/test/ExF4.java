@@ -7,6 +7,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
+import be.abis.courseadmin.exception.AgeCannotBeNegativeException;
 import be.abis.courseadmin.model.Course;
 import be.abis.courseadmin.model.Instructor;
 
@@ -23,9 +24,20 @@ public class ExF4 {
 		}
 		
 		List<Instructor> instructors = new ArrayList<Instructor>();
-		instructors.add(new Instructor("Bruno", "Zeghers", 58));
-		instructors.add(new Instructor("Patrick", "Roulet", 47));
-		instructors.add(new Instructor("Philippe", "Peeters", 52));
+		try {
+			instructors.add(new Instructor("Bruno", "Zeghers", 58));
+			instructors.add(new Instructor("Patrick", "Roulet", 47));
+			instructors.add(new Instructor("Philippe", "Peeters", 52));
+			instructors.add(new Instructor("Test", "NegativeAge", -34));
+		} catch (AgeCannotBeNegativeException e) {
+			System.out.println(e.getMessage());
+		}
+		System.out.println("Number of instructors created : "+instructors.size());
+		System.out.println("-----------------------------------------------------------");
+		for (Instructor instructor : instructors) {
+			System.out.println(instructor.toString());
+		}
+		System.out.println("-----------------------------------------------------------");
 		
 		instructors.get(0).printSalaryHistory(58, 21, 2200.0);	
 		instructors.get(1).printSalaryHistory(47, 22, 2500.0,"salaryHisPR.txt");

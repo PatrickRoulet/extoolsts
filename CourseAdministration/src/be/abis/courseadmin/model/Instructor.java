@@ -5,18 +5,20 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+import be.abis.courseadmin.exception.AgeCannotBeNegativeException;
+
 public class Instructor {
 
 	private String firstName;
 	private String lastName;
 	private int age=0;
 
-	public Instructor(String firstName, String lastName, int age) {
+	public Instructor(String firstName, String lastName, int age) throws AgeCannotBeNegativeException {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.age = age;
-	}
+		this.setAge(age);
+}
 
 	public String getFirstName() {
 		return firstName;
@@ -38,7 +40,10 @@ public class Instructor {
 		return age;
 	}
 
-	public void setAge(int age) {
+	public void setAge(int age) throws AgeCannotBeNegativeException {
+		if (age < 0) {
+			throw new AgeCannotBeNegativeException("Age cannot be negative : "+age);
+		}
 		this.age = age;
 	}
 
