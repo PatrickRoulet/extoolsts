@@ -1,0 +1,6 @@
+Salary of Patrick at 22 is 2500.0
+Salary of Patrick at 27 is 2575.0
+Salary of Patrick at 32 is 2652.25
+Salary of Patrick at 37 is 2731.8175
+Salary of Patrick at 42 is 2813.772025
+Salary of Patrick at 47 is 2898.18518575

@@ -1,0 +1,9 @@
+Salary of Bruno at 21 is 2200.0
+Salary of Bruno at 26 is 2266.0
+Salary of Bruno at 31 is 2333.98
+Salary of Bruno at 36 is 2403.9994
+Salary of Bruno at 41 is 2476.1193820000003
+Salary of Bruno at 46 is 2550.40296346
+Salary of Bruno at 51 is 2626.9150523638
+Salary of Bruno at 56 is 2705.722503934714
+Maximum salary reached
