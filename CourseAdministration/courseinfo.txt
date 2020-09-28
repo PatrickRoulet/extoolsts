@@ -1,0 +1,18 @@
+Title : Java
+Number of days : 3
+Price per day : 200.0
+Prior knowledge required : false
+Number of instructors : 2
+Instructor : Bruno
+Instructor : Patrick
+Total price : 726.0 (OK)
+=======================================================================
+Title : HTML
+Number of days : 5
+Price per day : 180.0
+Prior knowledge required : true
+Number of instructors : 2
+Instructor : Patrick
+Instructor : Philippe
+Total price : 900.0 (OK)
+=======================================================================
