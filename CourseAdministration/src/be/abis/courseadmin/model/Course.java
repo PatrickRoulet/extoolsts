@@ -106,7 +106,7 @@ public class Course {
 		bufferedWriter.write("Prior knowledge required : "+ priorKnowledgeRequired +"\n");
 		bufferedWriter.write("Number of instructors : "+ listOfInstructors.size()+"\n");
 		for (Instructor instructor : listOfInstructors) {
-			bufferedWriter.write("Instructor : "+ instructor.getFirstName()+"\n");
+			bufferedWriter.write(instructor.toString()+"\n");
 		}
 		bufferedWriter.write("Total price : "+ this.calculateTotalPrice() + " ("+label+")\n");
 		bufferedWriter.write("=======================================================================\n");

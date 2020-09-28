@@ -74,4 +74,9 @@ public class Instructor {
 		
 	}
 
+	@Override
+	public String toString() {
+		return "Instructor [firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + "]";
+	}
+
 }

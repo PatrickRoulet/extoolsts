@@ -3,8 +3,8 @@ Number of days : 3
 Price per day : 200.0
 Prior knowledge required : false
 Number of instructors : 2
-Instructor : Bruno
-Instructor : Patrick
+Instructor [firstName=Bruno, lastName=Zeghers, age=58]
+Instructor [firstName=Patrick, lastName=Roulet, age=47]
 Total price : 726.0 (OK)
 =======================================================================
 Title : HTML
@@ -12,7 +12,7 @@ Number of days : 5
 Price per day : 180.0
 Prior knowledge required : true
 Number of instructors : 2
-Instructor : Patrick
-Instructor : Philippe
+Instructor [firstName=Patrick, lastName=Roulet, age=47]
+Instructor [firstName=Philippe, lastName=Peeters, age=52]
 Total price : 900.0 (OK)
 =======================================================================
